@@ -4,6 +4,7 @@ class ProductsListing extends React.Component {
   constructor(props) {
     this.id = props.product.id;
     this.name = props.product.name;
+    this.quantity = props.product.quantity;
     this.cost = props.product.cost;
   }
 
@@ -12,6 +13,7 @@ class ProductsListing extends React.Component {
       <tr>
         <td>{this.id}</td>
         <td>{this.name}</td>
+        <td>{this.quantity}</td>        
         <td>{this.cost}</td>
       </tr>
     );

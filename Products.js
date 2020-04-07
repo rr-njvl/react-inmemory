@@ -8,18 +8,22 @@ class Products extends React.Component {
     this.products = [{
           'id': '1',
           'name': 'Apple iPhone 11 Pro',
+          'quantity': 10,
           'cost': '97900'
         }, {
           'id': '2',
           'name': 'Apple iPhone 6s 128GB',
+          'quantity': 15,
           'cost': '23999'
         }, {
           'id': '3',
           'name': 'Apple iPhone XS',
+          'quantity': 8,
           'cost': '58999'
         },{
           'id': '4',
           'name': 'Apple iPhone 6s 32GB',
+          'quantity': 20,
           'cost': '23999'
         }
       ];
@@ -36,6 +40,7 @@ class Products extends React.Component {
           <tr>
             <th>ID</th>
             <th>Name</th>
+            <th>Quantity</th>
             <th>Cost</th>
           </tr>
           {this.products.map(prod => (
