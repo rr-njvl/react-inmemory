@@ -15,9 +15,6 @@ class App extends Component {
     return (
       <div>
         <Products name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
       </div>
     );
   }

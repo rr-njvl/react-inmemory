@@ -5,7 +5,7 @@ class Products extends React.Component {
   constructor(props) {
     super(props);
     this.name = props.name;
-    this.products = products: [{
+    this.products = [{
           'id': '1',
           'name': 'Apple iPhone 11 Pro',
           'cost': '97900'
@@ -30,6 +30,7 @@ class Products extends React.Component {
       <div className="Products">
         <div>
           <h2>{this.name}</h2>
+          <p>Display all the products in table format</p>
         </div>
         <ProductsListing products={this.products} />
       </div>
