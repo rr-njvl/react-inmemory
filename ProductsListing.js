@@ -2,26 +2,18 @@ import React from 'react';
 
 class ProductsListing extends React.Component {
   constructor(props) {
-    super(props);
-    this.products = props.products;
+    this.id = props.product.id;
+    this.name = props.product.name;
+    this.cost = props.product.cost;
   }
 
   render() {
     return (
-      <table id="mobiles">
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Cost</th>
-        </tr>
-        {this.products.map(prod => (
-          <tr className="listing">
-            <td>{prod.id}</td>
-            <td>{prod.name}</td>
-            <td>{prod.cost}</td>
-          </tr>  
-        ))}
-      </table>
+      <tr>
+        <td>{this.id}</td>
+        <td>{this.name}</td>
+        <td>{this.cost}</td>
+      </tr>
     );
   }
 }

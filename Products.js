@@ -32,7 +32,17 @@ class Products extends React.Component {
           <h2>{this.name}</h2>
           <p>Display all the products in table format</p>
         </div>
-        <ProductsListing products={this.products} />
+        <table id="mobiles">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Cost</th>
+          </tr>
+          {this.products.map(prod => (
+            <ProductsListing product={prod} />  
+          ))}
+        </table>
+        
       </div>
     );
   }
