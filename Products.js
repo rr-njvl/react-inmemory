@@ -41,7 +41,7 @@ class Products extends React.Component {
             <th>ID</th>
             <th>Name</th>
             <th>Quantity</th>
-            <th>Cost</th>
+            <th>Cost (Rupees)</th>
           </tr>
           {this.products.map(prod => (
             <ProductsListing product={prod} />  
